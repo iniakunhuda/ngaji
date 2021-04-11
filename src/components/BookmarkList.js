@@ -25,10 +25,10 @@ class BookmarkList extends Component {
         const suratList = ((bookmarks != undefined) && (bookmarks.length)) ? (
             bookmarks.map((data) => {
                 return (
-                    <div className="group" key={data.id}>
+                    <div className="group " key={data.id}>
                         <Link title="Lihat Detail Ayat" to={'/surat/' + data.surat.nomor}>
                             <button onClick={(e) => this.handleDelete(e, data.id)} className="bg-red-500 hover:bg-red-700 text-white opacity-0 group-hover:opacity-100 px-3 py-1 text-sm w-full">Hapus dari Bookmark</button>
-                            <div className="bg-white border rounded shadow p-2 mb-2 w-full">
+                            <div className="bg-white rounded shadow p-2 mb-2 w-full dark:bg-gray-800 dark:text-white">
                                 <div className="grid grid-cols-1 md:grid-cols-2 items-center">
                                     <div className="text-right md:text-center">
                                         <h5 className="font-bold uppercase">{ data.surat.nama }</h5>

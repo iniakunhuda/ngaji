@@ -11,6 +11,7 @@
 - Al-Quran Online
 - Audio Surat, Ayat, dan Terjemahan
 - Bookmark Ayat
+- Dark Mode
 - ...
 
 ---

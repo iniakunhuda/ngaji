@@ -10,7 +10,7 @@ import BookmarkList from './components/BookmarkList'
 function App() {
   return (
       <BrowserRouter>
-        <div className="App">
+        <div className="App  dark:bg-gray-400">
           <Navbar />
           <Switch>
               <Route exact path="/" component={Home} />
