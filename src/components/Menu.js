@@ -3,8 +3,8 @@ import React from "react";
 
 const Menu = (props) => {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
-    const cls_menu_active = "block align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:border-purple-500 lg:hover:border-purple-500"
-    const cls_menu_inactive = "block align-middle text-gray-700 no-underline hover:text-purple-500 border-l-4 border-transparent lg:hover:border-gray-400"
+    const cls_menu_active = "block align-middle text-gray-700 no-underline hover:text-purple-500 dark:hover:text-black border-l-4 border-transparent lg:border-blue-200"
+    const cls_menu_inactive = "block align-middle text-gray-700 no-underline hover:text-purple-500 dark:hover:text-black border-l-4 border-transparent lg:hover:border-gray-400"
 
     return (
         <>

@@ -2,7 +2,7 @@ const ContentHome = () => {
     return (
         <>
             <div
-                className="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded dark:bg-gray-700 dark:text-white">
+                className="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded dark:bg-gray-800 dark:text-white">
                 <div className="font-sans">
                     {/*<span className="text-base text-purple-500 font-bold">&laquo;</span>*/}
                     {/*<a href="#" className="text-base md:text-sm text-purple-500 font-bold no-underline hover:underline">Back Link</a>*/}

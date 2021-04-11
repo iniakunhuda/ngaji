@@ -97,7 +97,7 @@ class SuratDetail extends Component {
                         <div className="bg-white rounded shadow p-10 mb-8 w-full dark:bg-gray-900 dark:text-white">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
-                                    <div className="rounded p-3 text-blue-800 font-bold">
+                                    <div className="rounded p-3 text-blue-800 font-bold dark:text-blue-200">
                                         { ayat.nomor }
                                     </div>
                                 </div>
