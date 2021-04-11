@@ -2,15 +2,15 @@ const ContentHome = () => {
     return (
         <>
             <div
-                className="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded">
+                className="w-full lg:w-4/5 p-8 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded dark:bg-gray-700 dark:text-white">
                 <div className="font-sans">
                     {/*<span className="text-base text-purple-500 font-bold">&laquo;</span>*/}
                     {/*<a href="#" className="text-base md:text-sm text-purple-500 font-bold no-underline hover:underline">Back Link</a>*/}
-                    <h1 className="font-sans break-normal text-gray-900 pt-6 pb-2 text-xl">Ngaji</h1>
+                    <h1 className="font-sans break-normal text-gray-900 pt-6 pb-2 text-xl dark:text-white">Ngaji</h1>
                     <hr className="border-b border-gray-400" />
                 </div>
                 <p className="py-6">
-                    👋 Bismillah, Selamat datang di platform <strong className="text-blue-800">Ngaji</strong>. Platform ngaji dibuat agar kamu menjadi semangat untuk membaca Al-Quran.
+                    👋 Bismillah, Selamat datang di platform <strong className="text-blue-800 dark:text-white">Ngaji</strong>. Platform ngaji dibuat agar kamu menjadi semangat untuk membaca Al-Quran.
                     Semoga dengan adanya platform ini dapat memberikan manfaat baik di dunia maupun di akhirat. Aamiin.
                 </p>
 

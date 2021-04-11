@@ -8,7 +8,7 @@ class SuratCard extends Component {
     render() {
         return (
             <Link to={'/surat/' + this.state.surat.nomor}>
-                <div className="bg-white border rounded shadow p-2 mb-2 w-full">
+                <div className="bg-white rounded shadow p-2 mb-2 w-full dark:bg-gray-900 dark:text-white">
                     <div className="flex flex-row items-center">
                         <div className="flex-shrink pr-4">
                             <div className="rounded p-3 text-blue-800 font-bold">

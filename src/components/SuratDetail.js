@@ -94,7 +94,7 @@ class SuratDetail extends Component {
 
                 return (
                     <div key={ayat.nomor}>
-                        <div className="bg-white border rounded shadow p-10 mb-8 w-full">
+                        <div className="bg-white rounded shadow p-10 mb-8 w-full dark:bg-gray-900 dark:text-white">
                             <div className="flex flex-row items-center">
                                 <div className="flex-shrink pr-4">
                                     <div className="rounded p-3 text-blue-800 font-bold">
@@ -133,7 +133,7 @@ class SuratDetail extends Component {
                     />
                     <button
                         onClick={this.togglePlay}
-                        className="bg-blue-500 inline-flex hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        className="bg-blue-500 inline-flex hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  dark:bg-gray-800 dark:text-white">
 
                         { !this.state.play ? <FaPlay className="h-6 mr-2"/> : <FaPause className="h-6 mr-2"/> }
                         <span>
@@ -143,7 +143,7 @@ class SuratDetail extends Component {
                     </button>
                     <button
                         onClick={this.toggleTerjemahan}
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold inline-flex py-2 px-4 rounded ml-5">
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold inline-flex py-2 px-4 rounded ml-5  dark:bg-gray-800 dark:text-white">
 
                         { !this.state.terjemahan ? <FaEye className="h-6 mr-2"/> : <FaEyeSlash className="h-6 mr-2"/> }
 
