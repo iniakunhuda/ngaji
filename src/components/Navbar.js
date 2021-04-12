@@ -1,20 +1,30 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import { FaQuran } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const toggleDarkMode = () => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    var theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light';
+        localStorage.setItem('theme', 'light');
     } else {
         document.documentElement.classList.add('dark');
-        localStorage.theme = 'dark';
+        localStorage.setItem('theme', 'dark');
     }
 }
 
 const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = React.useState(false);
+    const [navbarOpen, setNavbarOpen] = useState(false);
+
+    useEffect(() => {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    });
 
     return (
         <>
